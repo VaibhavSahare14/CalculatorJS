@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="Calculator.css">
+    <script src="Calculator.js"></script>
+</head>
+
+<body>
+    <main class="main-container">
+        <div class="head">
+            <h1>Calculator</h1>
+        </div>
+        <div class="calculator">
+            <div class="row-1">
+                <input id="result" type="text">
+                <input class="clear" type="button" onclick="result.value=''" value="C"></input>
+            </div>
+            <div class="row">
+                <button onclick="showInput('1')" value="1">1</button>
+                <button onclick="showInput('2')" value="2">2</button>
+                <button onclick="showInput('3')" value="3">3</button>
+                <button onclick="showInput('/')" value="/">/</button>
+            </div>
+            <div class="row">
+                <button onclick="showInput('4')" value="4">4</button>
+                <button onclick="showInput('5')" value="5">5</button>
+                <button onclick="showInput('6')" value="6">6</button>
+                <button onclick="showInput('-')" value="-">-</button>
+            </div>
+            <div class="row">
+                <button onclick="showInput('7')" value="7">7</button>
+                <button onclick="showInput('8')" value="8">8</button>
+                <button onclick="showInput('9')" value="9">9</button>
+                <button onclick="showInput('+')" value="+">+</button>
+            </div>
+            <div class="row">
+                <button onclick="showInput('.')" value=".">.</button>
+                <button onclick="showInput('0')" value="0">0</button>
+                <button value="=" onclick="solve()">=</button>
+                <button onclick="showInput('*')" value="*">*</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
